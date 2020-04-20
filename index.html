@@ -5,7 +5,15 @@
     </head>
     <body>
       <h1>I love zhangqi</h1>
-      <p>我爱张淇</p><br>
+      <p id = 'luv'>我爱张淇</p><br>
       <a href="test.html">this is a link</a>
+      <script>
+        const h1 = document.querySelector('#luv');
+        h1.addEventListener('click', function(){
+          const newElement = document.createElement('div');
+          newElement.textContent = '爱你哟！';
+          document.body.appendChild(newElement);
+        });
+      </script>
     </body>
 </html>
